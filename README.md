@@ -1,10 +1,8 @@
-# viastelle_admin_new
+# sweetgreen
 
 > A Vue.js project
 
 https://github.com/ducksoupdev/vue-webpack-typescript  
-http://element.eleme.io/  
-https://github.com/axios/axios  
 http://pm2.keymetrics.io/  
 
 
