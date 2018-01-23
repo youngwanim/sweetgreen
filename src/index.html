@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sweetgreen</title>
+  <link rel="stylesheet" media="screen" href="/assets/css/font.css" />
+  <link rel="stylesheet" media="screen" href="/assets/css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+</head>
+
+<body id="sweetgreen-application">
+  <div id="app-main" class="ember-view sweetgreen-application">
+    <navbar :inverted="false"></navbar>
+    <section class="container" role="main" id="maincontent">
+      <div class="ember-view focusing-outlet">
+        <router-view>loading...</router-view>
+      </div>
+    </section>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<header role="banner">
+   <nav role="navigation">
+      <div class="nav-left">
+         <router-link to="/" id="back-link" class="nav-link" v-if="menuBtn">MENU</router-link>
+      </div>
+      <div class="ember-view nav-context authenticated">
+         <div class="nav-name">
+            <div class="middle-align-small">
+              <h1 class="h6 middle-align-small-contain">Dupont</h1>
+            </div>
+         </div>
+         <div class="nav-branding">
+            <h1 class="h3">
+              <a href="/dupont/menu" class="ember-view active">          <span class="nav-sg-title">sweetgreen</span>Dupont</a>
+            </h1>
+         </div>
+      </div>
+      <div class="nav-right">
+         <div class="ember-view bag-button authenticated"><a href="javascript:void(0)" id="bag-btn" role="button" aria-controls="drawer" class="nav-link bag-link drawer-open test-show-mini-cart" aria-expanded="false" aria-label="Bag - 1 item">
+            <span class="bag-title">BAG</span>
+            <span class="bag-count" data-count="1">1</span>
+            </a>
+         </div>
+      </div>
+   </nav>
+   <div id="flash-view" class="ember-view is-notice">
+      <div id="message" tabindex="-1">
+      </div>
+   </div>
+</header>

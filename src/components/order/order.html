@@ -1,0 +1,139 @@
+<div class="ember-view focusing-outlet">
+   <div id="products-show" class="ember-view inherit">
+      <div class="product-image-large large-8 xlarge-9 large-offset-4 xlarge-offset-3 ember-view asset-container">
+         <div v-bind:style="{ 'background-image': 'url(' + currentProductImg + ')' }" class="ember-view background-image">
+         </div>
+      </div>
+      <div class="small-12 large-4 xlarge-3 wrap-detail-info" id="detail-info" aria-hidden="false">
+         <div  class="product-image-small ember-view asset-container">
+            <div v-bind:style="{ 'background-image': 'url(' + currentProductImg + ')' }" class="ember-view background-image">
+            </div>
+         </div>
+         <div class="row">
+            <div class="product-title-contain small-12 columns" id="detail-name">
+               <h2 id="heading-product-name" tabindex="-1" class="product-title h1 capitalize">
+                  {{ currentProductName }}
+               </h2>
+            </div>
+         </div>
+         <div id="ingredients-bar" class="row collapse">
+            <div class="small-12 columns">
+               <h3 class="h4" id="product-ingredient-count" aria-live="polite" aria-atomic="true">
+                  Ingredients <span>({{ currentProductIngredient.length }})</span>
+               </h3>
+            </div>
+         </div>
+         <div id="ingredients-list" v-bind:style="{ 'max-height': ingredientsHeight }">
+          <div style="display:inline" v-for="item in ingredientItem">
+            <div tabindex="0" role="button" class="ember-view ingredient-tile small-4 columns non-touch active" v-if="setIngredientItem(item.id)">
+               <div class="ingredient-sm">
+                  <div class="img-overlay">
+                     <div class="remove" aria-label="remove baby spinach" title="remove baby spinach"></div>
+                     <div class="ember-view asset-container">
+                        <div v-bind:style="{ 'background-image': 'url(/assets/img/ingredients/' + item.id + '.jpg)' }" class="ember-view background-image">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ingredient-sm-inner">
+                     <div class="h6 ingredient-title capitalize">
+                        {{ item.name }}
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+         </div>
+         <div id="large-options-panel" aria-hidden="false" style="min-height: 32px;">
+            <div class="options-bar row collapse">
+               <div class="small-12 columns">
+                  <h4>Order Options</h4>
+               </div>
+            </div>
+            <div class="options-list row collapse">
+               <div class="quantity option-item">
+                  <h5 class="h6">Quantity</h5>
+                  <div class="ember-view quantity-spinner">
+                     <fieldset>
+                        <legend>product quantity</legend>
+                        <button class="quantity-btn decrease" aria-label="decrease" aria-describedby="product-quantity-ember6899" data-ember-action="6900">
+                        –
+                        </button>
+                        <div class="h4 type-medium spaced-caps item-quantity" aria-live="polite" id="product-quantity-ember6899">
+                           1
+                        </div>
+                        <button class="quantity-btn increase" aria-label="increase" aria-describedby="product-quantity-ember6899" data-ember-action="6901">
+                        +
+                        </button>
+                     </fieldset>
+                  </div>
+               </div>
+               <div class="ember-view add-bread option-item">
+                  <h5 class="h6" id="add-bread-label">Add Bread (100 cals)</h5>
+                  <div tabindex="0" aria-labelledby="add-bread-label" role="checkbox" aria-checked="false" class="ember-view toggle-button false">
+                     <div class="h6 toggle-option toggle-false" aria-hidden="true">No</div>
+                     <div class="toggle" role="checkbox" aria-labelledby="add-bread-label" aria-checked="false"></div>
+                     <div class="h6 toggle-option toggle-true" aria-hidden="true">Yes</div>
+                  </div>
+               </div>
+               <!---->
+            </div>
+
+         </div>
+      </div>
+      <!---->
+      <!--/ This is the Small View Version-->
+      <!-- <div class="add-to-cart-panel cart-btn-fixed row">
+         <div id="options-panel" class="small-12 columns no-padding " aria-hidden="true">
+            <div class="options-bar row collapse">
+               <div class="small-12 columns">
+                  <h2>Order Options</h2>
+                  <button class="text-link" aria-label="close order options" data-ember-action="6917">
+                  Close
+                  </button>
+               </div>
+            </div>
+            <div class="options-list row collapse">
+               <div class="quantity option-item">
+                  <div class="h4">Quantity</div>
+                  <div class="ember-view quantity-spinner">
+                     <fieldset>
+                        <legend>product quantity</legend>
+                        <button class="quantity-btn decrease" aria-label="decrease" aria-describedby="product-quantity-ember6926" data-ember-action="6927">
+                        –
+                        </button>
+                        <div class="h4 type-medium spaced-caps item-quantity" aria-live="polite" id="product-quantity-ember6926">
+                           1
+                        </div>
+                        <button class="quantity-btn increase" aria-label="increase" aria-describedby="product-quantity-ember6926" data-ember-action="6928">
+                        +
+                        </button>
+                     </fieldset>
+                  </div>
+               </div>
+               <div class="ember-view add-bread option-item">
+                  <h5 class="h4" id="add-bread-label-small">Add Bread (100 cals)</h5>
+                  <div tabindex="0" aria-labelledby="add-bread-label" role="checkbox" aria-checked="false" class="ember-view toggle-button false">
+                     <div class="h6 toggle-option toggle-false" aria-hidden="true">No</div>
+                     <div class="toggle" role="checkbox" aria-labelledby="add-bread-label" aria-checked="false"></div>
+                     <div class="h6 toggle-option toggle-true" aria-hidden="true">Yes</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="confirm-or-add">
+            <button class="add-to-cart-button full-width
+               " data-ember-action="6935">
+               Add to Bag
+               <span class="cals-price">
+                  <span class="cals">
+                     680 CALS
+                  </span>
+                  <span class="price">
+                     <span class="price">$10.10</span>
+                  </span>
+               </span>
+            </button>
+         </div>
+      </div> -->
+   </div>
+</div>
