@@ -5,6 +5,10 @@
   float: left;
 }
 
+.ingredient-tile, .ingredient-toggle {
+  cursor: default !important;
+}
+
 #products-show #ingredients-list,
 #products-edit #ingredients-list {
   // overflow-y: auto;
