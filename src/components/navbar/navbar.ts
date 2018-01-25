@@ -3,6 +3,8 @@ import { Component, Vue, Watch } from 'vue-property-decorator';
 import { Link } from './link';
 import { Logger } from '../../util/log';
 
+import './navbar.scss';
+
 @Component({
   template: require('./navbar.html'),
   components: {

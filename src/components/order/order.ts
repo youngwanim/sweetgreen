@@ -42,7 +42,7 @@ export class OrderComponent extends Vue {
     { id: 'HotChickpeas', name: '红鹰嘴豆碎' },
     { id: 'Basil', name: 'Basil' },
     { id: 'UmamiWalnuts', name: '烤核桃' },
-    { id: 'ShavedParmesan', name: '哥瑞纳-帕达诺奶酪' },
+    { id: 'ShavedParmesan', name: '帕玛森芝士粉' },
     { id: 'Steelhead', name: '腌制三文鱼' },
     { id: 'OrganicWhiteCheddar', name: 'White Cheddar' },
     { id: 'BlueCheese', name: 'Blue Cheese' },
@@ -89,7 +89,7 @@ export class OrderComponent extends Vue {
       id: 'salmonster',
       name: '三文鱼大师',
       img: '/assets/img/menu/CityGourmetChop_Menu_Salmonster.png',
-      ingredient: ['ShreddedKale', 'OrganicBabySpinach', 'Steelhead', 'ChoppedRomaine', 'Avocado', 'Cucumber', 'HardBoiledEgg', 'UmamiWalnuts', 'MisoSesameGingerDressing'],
+      ingredient: ['ShreddedKale', 'OrganicBabySpinach', 'Steelhead', 'ChoppedRomaine', 'Avocado', 'Cucumber', 'HardBoiledEgg', 'RedOnion', 'UmamiWalnuts', 'MisoSesameGingerDressing'],
     },
     {
       id: 'guaca-hola',
@@ -106,7 +106,7 @@ export class OrderComponent extends Vue {
     {
       id: 'egypt-hummus',
       name: 'ⓥ埃及鹰嘴豆泥ⓥ',
-      img: '/assets/img/menu/CityGourmetChop_Menu_EgyptHummus.png',
+      img: '/assets/img/menu/CityGourmetChop_Menu_GreenEarth.png',
       ingredient: ['ShreddedKale', 'OrganicBabySpinach', 'ChoppedRomaine', 'HousemadeHummus', 'HotChickpeas', 'FetaCheese', 'Tomato', 'RedOnion', 'Cucumber', 'CurryYogurtDressing'],
     },
   ];
