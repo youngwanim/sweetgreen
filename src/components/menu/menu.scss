@@ -1,7 +1,7 @@
 .content h1 {
     text-align: center;
 }
-#video-background {
+.video-background {
   position: absolute;
   // min-width: 100%;
   // min-height: 100%;
@@ -14,61 +14,69 @@
   // object-fit: cover;
 }
 
+.video-background2 {
+  position: absolute;
+  // min-width: 100%;
+  // min-height: 100%;
+  width: 100%;
+  min-width:650px;
+  min-height:300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-.cover {
-    bottom: 0;
-    left: 0;
+#restaurants-menu #menu-hero .hero-content {
+ padding:0;
+}
+
+.swiper-box {
+  z-index: 10;
+  width:100%;
+  height: 300px;
+  overflow: hidden;
+  .swiper-item {
     overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
+    width: 100%;
+    position: relative;
+  }
+  .swiper-item .bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
-.cover img, .cover video {
-    display: block;
-    height: auto;
-    left: auto;
-    max-width: none;
-    min-height: 100%;
-    min-width: 100%;
-    right: auto;
-    position: absolute;
-    top: 0;
-    width: auto;
-    z-index: 1;
+.swiper-box {
+  position: relative;
+  z-index: 10;
+  width:100%;
+  height: 300px;
+  overflow: hidden;
+  .swiper-item {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  .swiper-item .bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
-.card-content {
-  word-break: break-word;
-}
+.shadow { opacity: 0.3 }
 
-@supports (transform: translateX(-50%)) {
 
-    .cover img, .cover video {
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-}
-
-@media screen and (min-aspect-ratio: 16/9){/* Make this the same aspect ratio as your video */
-
-    .cover img, .cover video {
-        max-width: 100vw;
-        min-width: 100vw;
-        width: 100vw;
-    }
-
-}
-
-@media screen and (max-aspect-ratio: 16/9){/* Make this the same aspect ratio as your video */
-
-    .cover img, .cover video {
-        height: 100vh;
-        max-height: 100vh;
-        min-height: 100vh;
-    }
-
+@media only screen and (max-height: 64em) and (min-height: 0em) and (min-width: 45.063em) {
+  .swiper-box {
+    height:430px;
+  }
+  #restaurants-menu #menu-hero .mast {
+    margin-bottom: 13rem;
+  }
 }

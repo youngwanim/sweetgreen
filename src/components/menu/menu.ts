@@ -1,6 +1,9 @@
 import { Component, Vue } from 'vue-property-decorator';
+import VueAwesomeSwiper from 'vue-awesome-swiper';
 
 import './menu.scss';
+
+Vue.use(VueAwesomeSwiper);
 
 @Component({
     template: require('./menu.html')
@@ -10,6 +13,19 @@ export class MenuComponent extends Vue {
     package: string = 'vue-webpack-typescript';
     repo: string = 'https://github.com/ducksoupdev/vue-webpack-typescript';
     mode: string = process.env.ENV;
+    swiperOption: any = {
+      // pagination: {
+      //   el: '.swiper-pagination'
+      // },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      autoplay: {
+        delay: 10000,
+      },
+      loop: true,
+    };
 
     productList: any = [
       {
@@ -53,5 +69,25 @@ export class MenuComponent extends Vue {
         price: 9.60,
       }
     ];
+
+    geSlideMoveEnd() {
+      const activeIndex = this.$refs.swiper['swiper'].activeIndex;
+
+      if (activeIndex === 2) {
+        this.$refs.video1.play();
+      }
+      if (activeIndex === 3) {
+        this.$refs.video2.play();
+      }
+      if (activeIndex === 4) {
+        this.$refs.video3.play();
+      }
+    }
+
+    geSlideMoveStart() {
+      this.$refs.video1.pause();
+      this.$refs.video2.pause();
+      this.$refs.video3.pause();
+    }
 
 }
