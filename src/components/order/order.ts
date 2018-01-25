@@ -82,31 +82,31 @@ export class OrderComponent extends Vue {
     {
       id: 'autumn-bowl',
       name: '一碗秋',
-      img: '//cdn-8.sweetgreen.com/production/images/4857/4861/OLO_CurryChickpea.jpg?b=1515008957773',
+      img: '/assets/img/menu/CityGourmetChop_Menu_AutumnBowl.png',
       ingredient: ['ShreddedKale', 'OrganicBabySpinach', 'ChoppedRomaine', 'RoastedChicken', 'WarmPortobelloMix', 'ToastedAlmonds', 'OrganicWildRice', 'RoastedSweetPotato', 'RoastedSesameTofu', 'ShavedParmesan', 'BalsamicVinegar'],
     },
     {
       id: 'salmonster',
       name: '三文鱼大师',
-      img: '//cdn-8.sweetgreen.com/production/images/4924/4926/1%20%282%29.jpg?b=1516398931466',
+      img: '/assets/img/menu/CityGourmetChop_Menu_Salmonster.png',
       ingredient: ['ShreddedKale', 'OrganicBabySpinach', 'Steelhead', 'ChoppedRomaine', 'Avocado', 'Cucumber', 'HardBoiledEgg', 'UmamiWalnuts', 'MisoSesameGingerDressing'],
     },
     {
       id: 'guaca-hola',
       name: '你好，牛油果',
-      img: '//cdn-7.sweetgreen.com/production/images/4877/4893/OLO-WinterSquash%20%20%20BC.jpg?b=1515031039747',
+      img: '/assets/img/menu/CityGourmetChop_Menu_GuacaHola.png',
       ingredient: ['ShreddedKale', 'OrganicBabySpinach', 'ChoppedRomaine', 'CitrusShrimp', 'TortillaChips', 'FreshLimeSqueeze', 'Avocado', 'Tomato', 'RawCorn', 'RedOnion', 'Cilantro', 'SpicyRedwineDressing'],
     },
     {
       id: 'green-earth',
       name: '绿色地球',
-      img: '//cdn-5.sweetgreen.com/production/images/3330/3336/OLO-Harvest_Bowl%20%281%29-1.jpg?b=1485294654269',
+      img: '/assets/img/menu/CityGourmetChop_Menu_GreenEarth.png',
       ingredient: ['ShreddedKale', 'OrganicBabySpinach', 'ChoppedRomaine', 'RoastedChicken', 'WarmPortobelloMix', 'WarmQuinoa', 'SpicyBroccoli', 'RawCorn', 'Tomato', 'Apple', 'PestoVinaigrette'],
     },
     {
       id: 'egypt-hummus',
       name: 'ⓥ埃及鹰嘴豆泥ⓥ',
-      img: '//cdn-3.sweetgreen.com/production/images/3349/3366/OLO-Shroomami%20%281%29-1.jpg?b=1485295334571',
+      img: '/assets/img/menu/CityGourmetChop_Menu_EgyptHummus.png',
       ingredient: ['ShreddedKale', 'OrganicBabySpinach', 'ChoppedRomaine', 'HousemadeHummus', 'HotChickpeas', 'FetaCheese', 'Tomato', 'RedOnion', 'Cucumber', 'CurryYogurtDressing'],
     },
   ];
