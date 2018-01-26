@@ -120,7 +120,6 @@ export class MenuComponent extends Vue {
       if (activeIndex === 5) {
         this.playerOptions3.autoplay = true;
       }
-
     }
 
     geSlideMoveStart() {
