@@ -11,93 +11,119 @@
         <swiper class="swiper-box" :options="swiperOption" ref="swiper" @slideChangeTransitionStart="geSlideMoveStart" @slideChangeTransitionEnd="geSlideMoveEnd" >
           <swiper-slide class="swiper-item">
             <div class="bg" style="background-image: url('/assets/video/CityGourmet_Main_01.png');">
-
+              <div class="visual-txt-wrap">
+                <div class="shadow" style="z-index:1;"></div>
+                <div style="position:relative; z-index:2; height:100%; padding:.9em">
+                  <div class="mast">
+                     <h1 class="font-sweet" id="menu-mast-heading" tabindex="-1">
+                        <img src="/assets/img/logo_visual.png" class="logo_visual" alt="" />
+                     </h1>
+                  </div>
+                  <div class="address">
+                     <span class="h5">
+                       一场真正美食的庆典-农场到餐桌的旅程<br />
+                       由米其林星级厨师准备的健康&amp;美味食物，一次尽享
+                     </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </swiper-slide>
           <swiper-slide class="swiper-item">
             <video class="video-background2" preload="metadata" ref="video1" loop="true">
               <source src="/assets/video/CityGourmet_Main_02.mp4" type="video/mp4">
             </video>
+            <div class="bg">
+              <div class="visual-txt-wrap">
+                <div class="shadow" style="z-index:1;"></div>
+                <div style="position:relative; z-index:2; height:100%; padding:.9em">
+                  <div class="mast">
+                     <h1 class="font-sweet" id="menu-mast-heading" tabindex="-1">
+                        <img src="/assets/img/logo_visual_chop.png" class="logo_visual" alt="" />
+                     </h1>
+                  </div>
+                  <div class="address">
+                     <span class="h5">
+                       本地种植，新鲜&有机收获
+                     </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </swiper-slide>
           <swiper-slide class="swiper-item">
             <video class="video-background2" preload="metadata" ref="video2" loop="true">
               <source src="/assets/video/CityGourmet_Main_03.mp4" type="video/mp4">
             </video>
+            <div class="bg">
+              <div class="visual-txt-wrap">
+                <div class="shadow" style="z-index:1;"></div>
+                <div style="position:relative; z-index:2; height:100%; padding:.9em">
+                  <div class="mast">
+                     <h1 class="font-sweet" id="menu-mast-heading" tabindex="-1">
+                        <img src="/assets/img/logo_visual_grill.png" class="logo_visual" alt="" />
+                     </h1>
+                  </div>
+                  <div class="address">
+                     <span class="h5">
+                       无抗生素&无激素肉和鱼
+                     </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </swiper-slide>
           <swiper-slide class="swiper-item">
             <video class="video-background2" preload="metadata" ref="video3" loop="true">
               <source src="/assets/video/CityGourmet_Main_04.mp4" type="video/mp4">
             </video>
+            <div class="bg">
+              <div class="visual-txt-wrap">
+                <div class="shadow" style="z-index:1;"></div>
+                <div style="position:relative; z-index:2; height:100%; padding:.9em">
+                  <div class="mast">
+                     <h1 class="font-sweet" id="menu-mast-heading" tabindex="-1">
+                        <img src="/assets/img/logo_visual_squeeze.png" class="logo_visual" alt="" />
+                     </h1>
+                  </div>
+                  <div class="address">
+                     <span class="h5">
+                       新鲜，有机排毒水果&蔬菜
+                     </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </swiper-slide>
           <swiper-slide class="swiper-item">
             <div class="bg" style="background-image: url('/assets/video/CityGourmet_Main_01-1.png');">
+              <div class="visual-txt-wrap">
+                <div class="shadow" style="z-index:1;"></div>
+                <div style="position:relative; z-index:2; height:100%; padding:.9em">
+                  <div class="mast">
+                     <h1 class="font-sweet" id="menu-mast-heading" tabindex="-1">
+                        <img src="/assets/img/logo_visual_rotisserie.png" class="logo_visual" alt="" />
+                     </h1>
+                  </div>
+                  <div class="address">
+                     <span class="h5">
+                       
+                     </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </swiper-slide>
 
           <div class="swiper-pagination" slot="pagination"></div>
-
+          <div class="swiper-button-prev" style="z-index:4;" slot="button-prev"></div>
+          <div class="swiper-button-next" style="z-index:4;" slot="button-next"></div>
         </swiper>
-      </div>
-      <div style="position:absolute; left:0; top:0; width:100%; height:100%; z-index:2;">
-        <div class="shadow" style="z-index:1;"></div>
-        <div style="position:relative; z-index:2; height:100%; padding:.9em">
-          <div class="mast">
-             <h1 class="font-sweet" id="menu-mast-heading" tabindex="-1">
-                Menu
-             </h1>
-             <span class="h4 block">
-             Winter
-             </span>
-          </div>
-          <div class="address">
-             <span class="h5">
-             1512 Connecticut Ave NW
-             <br>
-             Washington, DC 20036
-             <br>
-             <span class="phone-number">1 (202) 387-9338</span>
-             <br>
-             Mon - Sun 10:30am - 10pm
-             </span>
-          </div>
-        </div>
-
-        <div class="swiper-button-prev" style="z-index:4;" slot="button-prev"></div>
-        <div class="swiper-button-next" style="z-index:4;" slot="button-next"></div>
       </div>
    </div>
    <div class="jump-nav ember-view sticky-view">
       <div class="spacer" style=""></div>
       <div class="sticky" style="">
-         <!-- <div id="ember5605" class="ember-view jump-nav">
-            <div class="bar small-12 columns">
-               <div class="bar-inner">
-                  <div class="slider " style="left: 22px; width: 113.297px;"></div>
-                  <div role="navigation" aria-label="Jump Links">
-                     <ul>
-                        <li class="jump-link warm-bowls">
-                           <a href="javascript:void(0)" class="text-link type-medium" aria-label="warm-bowls; selected" data-ember-action="5606">
-                           warm bowls
-                           </a>
-                        </li>
-                        <li class="jump-link salads">
-                           <a href="javascript:void(0)" class="text-link" aria-label="salads" data-ember-action="5607">
-                           salads
-                           </a>
-                        </li>
-                        <li class="jump-link beverages">
-                           <a href="javascript:void(0)" class="text-link" aria-label="beverages" data-ember-action="5608">
-                           beverages
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-                  <button class="diet-toggle button-alt-cta " aria-expanded="false" aria-controls="" data-ember-action="5609">
-                  Diet
-                  </button>
-               </div>
-            </div>
-         </div> -->
          <div id="menu-filters" role="complementary">
             <div class="menu-filters-large ember-view menu-filters">
                <button class="filter-show-hide filter-headline h6 type-medium spaced-caps" aria-expanded="false" data-ember-action="5611">
@@ -169,7 +195,7 @@
                            </h2>
                            <p class="product-description p-small">{{ product.description }}</p>
                            <div class="product-meta">
-                              <span class="h3 block product-cost"><span class="price">${{ product.price }}</span></span>
+                              <span class="h3 block product-cost"><span class="price">￥{{ product.price }}</span></span>
                               <p class="product-cals">{{ product.cals }} Cal</p>
                            </div>
                         </div>
@@ -178,14 +204,6 @@
                               <div class="restrict-icon icon-product-restricted-sm" role="img" aria-label="Restricted"></div>
                            </div>
                         </div>
-                        <!-- <div class="seasonal-card" v-if="product.seasonal">
-                           <div class="seasonal-corner">
-                              <div class="seasonal-icon icon-warm-bowl-thick" role="img" aria-label="Seasonal Warm Bowl"></div>
-                           </div>
-                           <div class="seasonal-info">
-                              <p class="h6 ui-text spaced-caps">Seasonal</p>
-                           </div>
-                        </div> -->
                         <div class="card-image ember-view asset-container">
                            <div v-bind:style="{ 'background-image': 'url(' + product.img + ')' }" class="ember-view background-image">
                            </div>

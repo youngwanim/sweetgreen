@@ -68,9 +68,22 @@
     background-repeat: no-repeat;
   }
 }
+.visual-txt-wrap {
+  position:absolute; left:0; top:0; width:100%; height:100%; z-index:2;
+  .logo_visual {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 110px;
+  }
+  .address {
+    position: absolute;
+    left:20px;
+    bottom:20px;
+  }
+}
 
 .shadow { opacity: 0.3 }
-
 
 @media only screen and (max-height: 64em) and (min-height: 0em) and (min-width: 45.063em) {
   .swiper-box {
@@ -78,5 +91,11 @@
   }
   #restaurants-menu #menu-hero .mast {
     margin-bottom: 13rem;
+  }
+
+  .visual-txt-wrap {
+    .logo_visual {
+      width: 200px;
+    }
   }
 }
