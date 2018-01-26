@@ -105,9 +105,9 @@
 
 .shadow { opacity: 0.3 }
 
-@media only screen and (max-height: 64em) and (min-height: 0em) and (min-width: 45.063em) {
+@media only screen and (min-width: 45.063em) {
   .swiper-box {
-    height:430px;
+    height:600px;
   }
   #restaurants-menu #menu-hero .mast {
     margin-bottom: 13rem;
@@ -125,7 +125,7 @@
     height: 2000px;
     top: 50%;
     left: 50%;
-    margin-top: 200px;
+    margin-top: 300px;
     transform: translate(-50%, -50%);
   }
 }
