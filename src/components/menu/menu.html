@@ -30,9 +30,13 @@
             </div>
           </swiper-slide>
           <swiper-slide class="swiper-item">
-            <video class="video-background2" preload="metadata" ref="video1" loop="true">
+            <video-player  class="video-player-box"
+              ref="videoPlayer1"
+              :options="playerOptions">
+            </video-player>
+            <!-- <video class="video-background2" preload="metadata" ref="video1" loop="true">
               <source src="/assets/video/CityGourmet_Main_02.mp4" type="video/mp4">
-            </video>
+            </video> -->
             <div class="bg">
               <div class="visual-txt-wrap">
                 <div class="shadow" style="z-index:1;"></div>
@@ -52,9 +56,10 @@
             </div>
           </swiper-slide>
           <swiper-slide class="swiper-item">
-            <video class="video-background2" preload="metadata" ref="video2" loop="true">
-              <source src="/assets/video/CityGourmet_Main_03.mp4" type="video/mp4">
-            </video>
+            <video-player  class="video-player-box"
+              ref="videoPlayer2"
+              :options="playerOptions2">
+            </video-player>
             <div class="bg">
               <div class="visual-txt-wrap">
                 <div class="shadow" style="z-index:1;"></div>
@@ -74,9 +79,33 @@
             </div>
           </swiper-slide>
           <swiper-slide class="swiper-item">
-            <video class="video-background2" preload="metadata" ref="video3" loop="true">
-              <source src="/assets/video/CityGourmet_Main_04.mp4" type="video/mp4">
-            </video>
+            <video-player  class="video-player-box"
+              ref="videoPlayer4"
+              :options="playerOptions4">
+            </video-player>
+            <div class="bg">
+              <div class="visual-txt-wrap">
+                <div class="shadow" style="z-index:1;"></div>
+                <div style="position:relative; z-index:2; height:100%; padding:.9em">
+                  <div class="mast">
+                     <h1 class="font-sweet" id="menu-mast-heading" tabindex="-1">
+                        <img src="/assets/img/logo_visual_rotisserie.png" class="logo_visual" alt="" />
+                     </h1>
+                  </div>
+                  <div class="address">
+                     <span class="h5">
+
+                     </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="swiper-item">
+            <video-player  class="video-player-box"
+              ref="videoPlayer3"
+              :options="playerOptions3">
+            </video-player>
             <div class="bg">
               <div class="visual-txt-wrap">
                 <div class="shadow" style="z-index:1;"></div>
@@ -89,25 +118,6 @@
                   <div class="address">
                      <span class="h5">
                        新鲜，有机排毒水果&蔬菜
-                     </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide class="swiper-item">
-            <div class="bg" style="background-image: url('/assets/video/CityGourmet_Main_01-1.png');">
-              <div class="visual-txt-wrap">
-                <div class="shadow" style="z-index:1;"></div>
-                <div style="position:relative; z-index:2; height:100%; padding:.9em">
-                  <div class="mast">
-                     <h1 class="font-sweet" id="menu-mast-heading" tabindex="-1">
-                        <img src="/assets/img/logo_visual_rotisserie.png" class="logo_visual" alt="" />
-                     </h1>
-                  </div>
-                  <div class="address">
-                     <span class="h5">
-                       
                      </span>
                   </div>
                 </div>

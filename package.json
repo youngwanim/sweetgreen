@@ -33,11 +33,16 @@
     "ts-loader": "^3.3.0",
     "uiv": "^0.12.3",
     "vue": "~2.5.3",
+    "vue-awesome-swiper": "^3.1.2",
     "vue-class-component": "~6.1.0",
     "vue-cookie": "^1.1.4",
+    "vue-dplayer": "0.0.8",
+    "vue-player": "^1.0.2",
     "vue-property-decorator": "~6.0.0",
     "vue-resource": "^1.3.4",
-    "vue-router": "~3.0.1"
+    "vue-router": "~3.0.1",
+    "vue-video-player": "^5.0.1",
+    "vue-visual": "^0.3.2"
   },
   "devDependencies": {
     "@types/mocha": "~2.2.44",

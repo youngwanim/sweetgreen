@@ -1,10 +1,12 @@
 import { Component, Vue } from 'vue-property-decorator';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
+import VueVideoPlayer from 'vue-video-player';
 
 import './menu.scss';
 
 Vue.use(VueAwesomeSwiper);
-
+Vue.use(VueVideoPlayer);
+Vue.component('VideoPlayer', VueVideoPlayer);
 @Component({
     template: require('./menu.html')
 })
@@ -14,9 +16,6 @@ export class MenuComponent extends Vue {
     repo: string = 'https://github.com/ducksoupdev/vue-webpack-typescript';
     mode: string = process.env.ENV;
     swiperOption: any = {
-      // pagination: {
-      //   el: '.swiper-pagination'
-      // },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -26,6 +25,42 @@ export class MenuComponent extends Vue {
       },
       loop: true,
     };
+    playerOptions: any = {
+      muted: true,
+      sources: [{
+        type: "video/mp4",
+        src: "/assets/video/CityGourmet_Main_02.mp4"
+      }],
+      loop: true,
+      autoplay: false
+    };
+    playerOptions2: any = {
+      muted: true,
+      sources: [{
+        type: "video/mp4",
+        src: "/assets/video/CityGourmet_Main_03.mp4"
+      }],
+      loop: true,
+      autoplay: false
+    };
+    playerOptions3: any = {
+      muted: true,
+      sources: [{
+        type: "video/mp4",
+        src: "/assets/video/CityGourmet_Main_04.mp4"
+      }],
+      loop: true,
+      autoplay: false
+    };
+    playerOptions4: any = {
+      muted: true,
+      sources: [{
+        type: "video/mp4",
+        src: "/assets/video/CityGourmet_Main_05.mp4"
+      }],
+      loop: true,
+      autoplay: false
+    };
 
     productList: any = [
       {
@@ -34,7 +69,7 @@ export class MenuComponent extends Vue {
         name: '一碗秋',
         description: '羽衣甘蓝， 菠菜， 长叶莴苣, 烤香草鸡, 有机野米, 红薯, 烤杏仁, 炒蘑菇, 烤豆腐, 帕玛森芝士粉, 经典意式黑醋汁',
         cals: 610,
-        price: 30,
+        price: 10.10,
       },
       {
         id: 'salmonster',
@@ -42,7 +77,7 @@ export class MenuComponent extends Vue {
         name: '三文鱼大师',
         description: '羽衣甘蓝，菠菜， 长叶莴苣, 腌制三文鱼, 牛油果, 黄瓜, 鸡蛋, 烤核桃, 红洋葱, 味增芝麻姜酱',
         cals: 605,
-        price: 30,
+        price: 8.60,
       },
       {
         id: 'guaca-hola',
@@ -50,7 +85,7 @@ export class MenuComponent extends Vue {
         name: '你好，牛油果',
         description: '羽衣甘蓝， 菠菜， 长叶莴苣, 烤香辣虾, 牛油果, 番茄, 玉米, 红洋葱, 芫荽叶, 玉米片, 青柠, 香辣红酒酱',
         cals: 705,
-        price: 30,
+        price:9.90,
       },
       {
         id: 'green-earth',
@@ -58,7 +93,7 @@ export class MenuComponent extends Vue {
         name: '绿色地球',
         description: '羽衣甘蓝， 菠菜， 长叶莴苣, 烤香辣鸡肉, 藜麦, 西蓝花, 玉米, 番茄, 苹果, 炒蘑菇, 意大利青酱',
         cals: 570,
-        price: 30,
+        price: 10.10,
       },
       {
         id: 'egypt-hummus',
@@ -66,7 +101,7 @@ export class MenuComponent extends Vue {
         name: 'ⓥ埃及鹰嘴豆泥ⓥ',
         description: '羽衣甘蓝， 菠菜， 长叶莴苣, 自制鹰嘴豆泥, 菲达奶酪, 番茄, 红洋葱, 黄瓜, 红鹰嘴豆碎, 青柠酸奶酱',
         cals: 640,
-        price: 30,
+        price: 9.60,
       }
     ];
 
@@ -74,20 +109,25 @@ export class MenuComponent extends Vue {
       const activeIndex = this.$refs.swiper['swiper'].activeIndex;
 
       if (activeIndex === 2) {
-        this.$refs.video1.play();
+        this.playerOptions.autoplay = true;
       }
       if (activeIndex === 3) {
-        this.$refs.video2.play();
+        this.playerOptions2.autoplay = true;
       }
       if (activeIndex === 4) {
-        this.$refs.video3.play();
+        this.playerOptions4.autoplay = true;
       }
+      if (activeIndex === 5) {
+        this.playerOptions3.autoplay = true;
+      }
+
     }
 
     geSlideMoveStart() {
-      this.$refs.video1.pause();
-      this.$refs.video2.pause();
-      this.$refs.video3.pause();
+      this.playerOptions.autoplay = false;
+      this.playerOptions2.autoplay = false;
+      this.playerOptions3.autoplay = false;
+      this.playerOptions4.autoplay = false;
     }
 
 }

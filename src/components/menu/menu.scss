@@ -13,7 +13,19 @@
   transform: translate(-50%, -50%);
   // object-fit: cover;
 }
-
+.video-js {
+  width: auto !important;
+  height: auto  !important;
+}
+.video-js .vjs-tech {
+  position: absolute;
+  width: auto;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  margin-top: 150px;
+  transform: translate(-50%, -50%);
+}
 .video-background2 {
   position: absolute;
   // min-width: 100%;
@@ -25,7 +37,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.video-js .vjs-big-play-button {
+  display: none !important
+}
 #restaurants-menu #menu-hero .hero-content {
  padding:0;
 }
@@ -97,5 +111,15 @@
     .logo_visual {
       width: 200px;
     }
+  }
+
+  .video-js .vjs-tech {
+    position: absolute;
+    width: auto;
+    height: 2000px;
+    top: 50%;
+    left: 50%;
+    margin-top: 200px;
+    transform: translate(-50%, -50%);
   }
 }
