@@ -56,7 +56,7 @@ export class MenuComponent extends Vue {
       muted: true,
       sources: [{
         type: "video/mp4",
-        src: "http://viastelle-main.oss-cn-shanghai.aliyuncs.com/citygourmet/CityGourmet_Main_02.mp4"
+        src: "http://viastelle-main.oss-cn-shanghai.aliyuncs.com/citygourmet/CityGourmet_Main_05.mp4"
       }],
       loop: true,
       autoplay: true
