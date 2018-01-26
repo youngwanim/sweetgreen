@@ -32,7 +32,7 @@ export class MenuComponent extends Vue {
         src: "http://viastelle-main.oss-cn-shanghai.aliyuncs.com/citygourmet/CityGourmet_Main_02.mp4"
       }],
       loop: true,
-      autoplay: true
+      autoplay: false
     };
     playerOptions2: any = {
       muted: true,
@@ -41,7 +41,7 @@ export class MenuComponent extends Vue {
         src: "http://viastelle-main.oss-cn-shanghai.aliyuncs.com/citygourmet/CityGourmet_Main_03.mp4"
       }],
       loop: true,
-      autoplay: true
+      autoplay: false
     };
     playerOptions3: any = {
       muted: true,
@@ -50,7 +50,7 @@ export class MenuComponent extends Vue {
         src: "http://viastelle-main.oss-cn-shanghai.aliyuncs.com/citygourmet/CityGourmet_Main_04.mp4"
       }],
       loop: true,
-      autoplay: true
+      autoplay: false
     };
     playerOptions4: any = {
       muted: true,
@@ -59,7 +59,7 @@ export class MenuComponent extends Vue {
         src: "http://viastelle-main.oss-cn-shanghai.aliyuncs.com/citygourmet/CityGourmet_Main_02.mp4"
       }],
       loop: true,
-      autoplay: true
+      autoplay: false
     };
 
     productList: any = [
@@ -107,7 +107,7 @@ export class MenuComponent extends Vue {
 
     geSlideMoveEnd() {
       const activeIndex = this.$refs.swiper['swiper'].activeIndex;
-      
+
       if (activeIndex === 2) {
         this.playerOptions.autoplay = true;
       }
