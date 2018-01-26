@@ -42,9 +42,19 @@
 }
 .swiper-button-next {
   right: 20px;
+  width: 15px;
+  height: 32px;
+  margin-top: -16px;
+  background: url('/assets/img/btn/icNext@2x.png') no-repeat;
+  background-size:15px 32px
 }
 .swiper-button-prev {
   left: 20px;
+  width: 15px;
+  height: 32px;
+  margin-top: -16px;
+  background: url('/assets/img/btn/icPrevious@2x.png') no-repeat;
+  background-size:15px 32px
 }
 #restaurants-menu #menu-hero .hero-content {
  padding:0;
