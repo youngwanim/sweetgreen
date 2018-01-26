@@ -56,7 +56,7 @@ export class MenuComponent extends Vue {
       muted: true,
       sources: [{
         type: "video/mp4",
-        src: "http://viastelle-main.oss-cn-shanghai.aliyuncs.com/citygourmet/CityGourmet_Main_05.mp4"
+        src: "http://viastelle-main.oss-cn-shanghai.aliyuncs.com/citygourmet/CityGourmet_Main_02.mp4"
       }],
       loop: true,
       autoplay: true
@@ -107,26 +107,26 @@ export class MenuComponent extends Vue {
 
     geSlideMoveEnd() {
       const activeIndex = this.$refs.swiper['swiper'].activeIndex;
-      //
-      // if (activeIndex === 2) {
-      //   this.playerOptions.autoplay = true;
-      // }
-      // if (activeIndex === 3) {
-      //   this.playerOptions2.autoplay = true;
-      // }
-      // if (activeIndex === 4) {
-      //   this.playerOptions4.autoplay = true;
-      // }
-      // if (activeIndex === 5) {
-      //   this.playerOptions3.autoplay = true;
-      // }
+      
+      if (activeIndex === 2) {
+        this.playerOptions.autoplay = true;
+      }
+      if (activeIndex === 3) {
+        this.playerOptions2.autoplay = true;
+      }
+      if (activeIndex === 4) {
+        this.playerOptions4.autoplay = true;
+      }
+      if (activeIndex === 5) {
+        this.playerOptions3.autoplay = true;
+      }
     }
 
     geSlideMoveStart() {
-      // this.playerOptions.autoplay = false;
-      // this.playerOptions2.autoplay = false;
-      // this.playerOptions3.autoplay = false;
-      // this.playerOptions4.autoplay = false;
+      this.playerOptions.autoplay = false;
+      this.playerOptions2.autoplay = false;
+      this.playerOptions3.autoplay = false;
+      this.playerOptions4.autoplay = false;
     }
 
 }
