@@ -107,22 +107,34 @@ export class MenuComponent extends Vue {
 
     geSlideMoveEnd() {
       const activeIndex = this.$refs.swiper['swiper'].activeIndex;
-      //
+      let element2: HTMLElement = document.querySelector('.swiper-item2 .vjs-big-play-button') as HTMLElement;
+      let element3: HTMLElement = document.querySelector('.swiper-item3 .vjs-big-play-button') as HTMLElement;
+      let element4: HTMLElement = document.querySelector('.swiper-item4 .vjs-big-play-button') as HTMLElement;
+      let element5: HTMLElement = document.querySelector('.swiper-item5 .vjs-big-play-button') as HTMLElement;
+
+
       // if (activeIndex === 2) {
-      //   this.playerOptions.autoplay = true;
+      //   element2.click();
       // }
       // if (activeIndex === 3) {
-      //   this.playerOptions2.autoplay = true;
+      //   element3.click();
       // }
       // if (activeIndex === 4) {
-      //   this.playerOptions4.autoplay = true;
+      //   element4.click();
       // }
       // if (activeIndex === 5) {
-      //   this.playerOptions3.autoplay = true;
+      //   element5.click();
       // }
     }
 
     geSlideMoveStart() {
+      let element2: HTMLElement = document.querySelector('.swiper-item2 .vjs-big-play-button') as HTMLElement;
+      let element3: HTMLElement = document.querySelector('.swiper-item3 .vjs-big-play-button') as HTMLElement;
+      let element4: HTMLElement = document.querySelector('.swiper-item4 .vjs-big-play-button') as HTMLElement;
+      let element5: HTMLElement = document.querySelector('.swiper-item5 .vjs-big-play-button') as HTMLElement;
+
+
+      // document.querySelector('vjs-big-play-button').click();
       // this.playerOptions.autoplay = false;
       // this.playerOptions2.autoplay = false;
       // this.playerOptions3.autoplay = false;

@@ -9,7 +9,8 @@
       </div> -->
       <div class="hero-content clearfix">
         <swiper class="swiper-box" :options="swiperOption" ref="swiper" @slideChangeTransitionStart="geSlideMoveStart" @slideChangeTransitionEnd="geSlideMoveEnd" >
-          <swiper-slide class="swiper-item">
+        <!-- <swiper class="swiper-box" :options="swiperOption" ref="swiper"> -->
+          <swiper-slide class="swiper-item swiper-item1">
             <div class="bg" style="background-image: url('/assets/video/CityGourmet_Main_01-1.png');">
               <div class="visual-txt-wrap">
                 <div class="shadow" style="z-index:1;"></div>
@@ -29,14 +30,11 @@
               </div>
             </div>
           </swiper-slide>
-          <swiper-slide class="swiper-item">
+          <swiper-slide class="swiper-item swiper-item2">
             <video-player  class="video-player-box"
               ref="videoPlayer1"
               :options="playerOptions">
             </video-player>
-            <!-- <video class="video-background2" preload="metadata" ref="video1" loop="true">
-              <source src="/assets/video/CityGourmet_Main_02.mp4" type="video/mp4">
-            </video> -->
             <div class="bg">
               <div class="visual-txt-wrap">
                 <div class="shadow" style="z-index:1;"></div>
@@ -55,7 +53,7 @@
               </div>
             </div>
           </swiper-slide>
-          <swiper-slide class="swiper-item">
+          <swiper-slide class="swiper-item swiper-item3">
             <video-player  class="video-player-box"
               ref="videoPlayer2"
               :options="playerOptions2">
@@ -78,7 +76,7 @@
               </div>
             </div>
           </swiper-slide>
-          <swiper-slide class="swiper-item">
+          <swiper-slide class="swiper-item swiper-item4">
             <video-player  class="video-player-box"
               ref="videoPlayer4"
               :options="playerOptions4">
@@ -101,7 +99,7 @@
               </div>
             </div>
           </swiper-slide>
-          <swiper-slide class="swiper-item">
+          <swiper-slide class="swiper-item swiper-item5">
             <video-player  class="video-player-box"
               ref="videoPlayer3"
               :options="playerOptions3">
