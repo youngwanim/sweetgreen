@@ -105,7 +105,7 @@ export class OrderComponent extends Vue {
     },
     {
       id: 'egypt-hummus',
-      name: 'ⓥ埃及鹰嘴豆泥ⓥ',
+      name: '埃及鹰嘴豆泥',
       img: '/assets/img/menu/CityGourmetChop_Menu_EgyptHummus.png',
       ingredient: ['ShreddedKale', 'OrganicBabySpinach', 'ChoppedRomaine', 'HousemadeHummus', 'HotChickpeas', 'FetaCheese', 'Tomato', 'RedOnion', 'Cucumber', 'CurryYogurtDressing'],
     },

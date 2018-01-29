@@ -98,7 +98,7 @@ export class MenuComponent extends Vue {
       {
         id: 'egypt-hummus',
         img: '/assets/img/menu/CityGourmetChop_Menu_EgyptHummus.png',
-        name: 'ⓥ埃及鹰嘴豆泥ⓥ',
+        name: '埃及鹰嘴豆泥',
         description: '羽衣甘蓝， 菠菜， 长叶莴苣, 自制鹰嘴豆泥, 菲达奶酪, 番茄, 红洋葱, 黄瓜, 红鹰嘴豆碎, 青柠酸奶酱',
         cals: 640,
         price: 30,
