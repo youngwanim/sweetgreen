@@ -20,13 +20,10 @@
 
 
 
+
 @font-face {
   font-family: 'NotoSansCJKsc-Bold';
-  src: url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Bold.eot'); /* IE9 Compat Modes */
-  src: url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Bold.woff') format('woff'), /* Modern Browsers */
-  url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Bold.svg#7510147900d23fa3ad697e74bf146ea2') format('svg'); /* Legacy iOS */
+  src: url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Bold.otf'); /* IE9 Compat Modes */
 
   font-style:   normal;
   font-weight:  400;
@@ -34,11 +31,7 @@
 
 @font-face {
   font-family: 'NotoSansCJKsc-Light';
-  src: url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Light.eot'); /* IE9 Compat Modes */
-  src: url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Light.woff') format('woff'), /* Modern Browsers */
-  url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Light.svg#7510147900d23fa3ad697e74bf146ea2') format('svg'); /* Legacy iOS */
+  src: url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Light.otf'); /* IE9 Compat Modes */
 
   font-style:   normal;
   font-weight:  400;
@@ -46,11 +39,7 @@
 
 @font-face {
   font-family: 'NotoSansCJKsc-Regular';
-  src: url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Regular.eot'); /* IE9 Compat Modes */
-  src: url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Regular.woff') format('woff'), /* Modern Browsers */
-  url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Regular.svg#7510147900d23fa3ad697e74bf146ea2') format('svg'); /* Legacy iOS */
+  src: url('//viastelle-main.oss-cn-shanghai.aliyuncs.com/resources/font/NotoSansCJKsc-Regular.otf'); /* IE9 Compat Modes */
 
   font-style:   normal;
   font-weight:  400;
