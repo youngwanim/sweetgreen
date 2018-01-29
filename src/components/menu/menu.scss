@@ -1,3 +1,4 @@
+
 .content h1 {
     text-align: center;
 }
@@ -123,6 +124,12 @@
     height: 100%;
     background: url('/assets/img/shadow/gradationUp.png') repeat-x;
   }
+}
+
+.product-name {
+    font-family: 'NotoSansCJKsc-Bold' !important;
+    font-size:22px;
+    color:#333;
 }
 
 @media only screen and (min-width: 45.063em) {
